@@ -1,0 +1,3 @@
+Tushar, Lucas, and Hilda
+
+CNN (Inception V3 is pretty good and pre-trained) on the images we got from Far Fetched. Then, we take the feature vector of each image (which is the last layer before mapping to the output) and that becomes our new representation of that product. Then we tack on things like brand and price as new dimensions to the end of the feature vector (for each image) and calculate similarity scores with the other products (will get a symmetric matrix here). We can use these scores to estimate the sentiment of say 4 other items the user tweeted about. That will reduce the sparsity of our matrix substantially
